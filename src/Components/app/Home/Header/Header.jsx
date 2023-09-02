@@ -65,11 +65,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      {/* {
-        openSignIn && <div >
-        <Modal setOpenSignIn={setOpenSignIn} />
-      </div>
-      } */}
+    
     </div>
   );
 };
