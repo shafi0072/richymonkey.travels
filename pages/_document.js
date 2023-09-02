@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5823309906308652"
      crossorigin="anonymous"></script>
-<Head>
+       </Head>
       <body>
         <Main />
         <NextScript />
