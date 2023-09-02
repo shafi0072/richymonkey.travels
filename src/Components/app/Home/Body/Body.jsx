@@ -6,7 +6,7 @@ const Body = () => {
     const [selected, setSelected] = useState("Rooms");
 
     return (
-        <div>
+        <div className='px-4'>
             <Categories selected={selected} setSelected={setSelected}/>
             <CardsBody selected={selected} />
         </div>

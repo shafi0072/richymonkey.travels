@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaAngleDown, FaMinus, FaUser } from 'react-icons/fa6';
+import { FaAngleDown, FaMinus, FaPlus, FaUser } from 'react-icons/fa6';
 
 const AddGuest = ({adults,setAdults,children,setChildren,room,setRoom,openGuest,setOpenGuest,setOpenCalender}) => {
  
@@ -23,7 +23,7 @@ const AddGuest = ({adults,setAdults,children,setChildren,room,setRoom,openGuest,
                         <FaMinus className='cursor-pointer' onClick={()=>setAdults(adults - 1)} />
                         </button>
                         <p className='mx-4'>{adults}</p>
-                        <FaMinus className='cursor-pointer' onClick={()=>setAdults(adults + 1)}/>
+                        <FaPlus className='cursor-pointer' onClick={()=>setAdults(adults + 1)}/>
                     </div>
                    </div>
                    <div className='flex justify-between items-center'>
@@ -31,7 +31,7 @@ const AddGuest = ({adults,setAdults,children,setChildren,room,setRoom,openGuest,
                     <div className='border border-gray-600 p-2 flex justify-between  items-center gap-4 rounded-md w-[120px]'>
                       <button disabled={children <= 0} >  <FaMinus className='cursor-pointer' onClick={()=>setChildren(children - 1)} /></button>
                         <p className='mx-4'>{children}</p>
-                        <FaMinus className='cursor-pointer' onClick={()=>setChildren(children + 1)}/>
+                        <FaPlus className='cursor-pointer' onClick={()=>setChildren(children + 1)}/>
                     </div>
                    </div>
                    <div className='flex justify-between items-center'>
@@ -41,7 +41,7 @@ const AddGuest = ({adults,setAdults,children,setChildren,room,setRoom,openGuest,
                         <FaMinus  className='cursor-pointer' onClick={()=>setRoom(room - 1)} />
                         </button>
                         <p className='mx-4'>{room}</p>
-                        <FaMinus className='cursor-pointer' onClick={()=>setRoom(room + 1)}/>
+                        <FaPlus className='cursor-pointer' onClick={()=>setRoom(room + 1)}/>
                     </div>
                    </div>
                    <button onClick={()=>setOpenGuest(false)} className='border border-green-600 py-2 w-full rounded-md'>Done</button>

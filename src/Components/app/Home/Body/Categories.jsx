@@ -6,7 +6,7 @@ const Categories = ({setSelected,selected}) => {
 
   return (
     <div>
-      <div className="flex gap-6 items-center justify-center max-w-screen-2xl mx-auto mt-8">
+      <div className="flex gap-6 items-center justify-center max-w-screen-2xl mx-auto mt-8 ">
         {categories.map((category, index) => (
           <div
             // onClick={handleClick}

@@ -11,21 +11,21 @@ const Header = () => {
   return (
     <div>
       <header
-        style={{ paddingLeft: "160px", paddingRight: "160px" }}
-        className="flex justify-between items-center px-6 py-4"
+      
+        className="flex justify-between items-center max-w-screen-2xl mx-auto py-4 px-4"
       >
         <div className="flex items-center">
           <Link href="/">
             <Image
               src={logo}
               alt="Logo"
-              className="h-[] w-48 cursor-pointer"
-              style={{
-                width: "193.5483856201172px",
-                left: "160px",
-                top: "24px",
-                borderRadius: "0px",
-              }}
+              className=" w-48 cursor-pointer"
+              // style={{
+              //   width: "193.5483856201172px",
+              //   left: "160px",
+              //   top: "24px",
+              //   borderRadius: "0px",
+              // }}
             />
           </Link>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SingleCard = ({item}) => {
-    console.log(item)
+    // console.log(item)
     return (
         <div>
          <img className='rounded-lg' src={item?.image} alt="" />
