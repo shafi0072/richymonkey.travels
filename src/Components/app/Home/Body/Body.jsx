@@ -3,7 +3,7 @@ import Categories from './Categories';
 import CardsBody from './CardsBody/CardsBody';
 
 const Body = () => {
-    const [selected, setSelected] = useState("");
+    const [selected, setSelected] = useState("To-Let/Home-rent");
 
     return (
         <div>

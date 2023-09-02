@@ -8,7 +8,7 @@ import {
 
 export const categories = [
   {
-    label: "Rooms",
+    label: "To-Let/Home-rent",
     icon: <FaBuildingColumns />,
     data: [
       {
