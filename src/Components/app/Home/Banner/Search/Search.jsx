@@ -71,7 +71,7 @@ const Search = () => {
   return (
     <div>
       {windowWidth < 700 ? (
-        <div className="px-4">
+        <div className="px-4 w-full">
           <div className="bg-white p-6 rounded-full flex item-center mt-8  ">
             <div className="mr-2 ps-3">
               <FaLocationDot className="text-xl" />
@@ -109,7 +109,7 @@ const Search = () => {
           </div>
         </div>
       ) : (
-        <div className="md:flex items-center justify-center mt-12">
+        <div className="md:flex items-center justify-center mt-12 px-6">
           <section
             style={{
               height: "70px",

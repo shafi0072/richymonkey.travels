@@ -1,9 +1,7 @@
 import { categories } from "@/src/constant/categories";
 import React, { useState } from "react";
 
-const Categories = ({setSelected,selected}) => {
-
-
+const Categories = ({ setSelected, selected }) => {
   return (
     <div>
       <div className="flex gap-6 items-center justify-center max-w-screen-2xl mx-auto mt-8 ">

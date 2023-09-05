@@ -3,13 +3,15 @@ import Header from "../Header/Header";
 import Hero from "./Hero/Hero";
 import Search from "./Search/Search";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Navbar from "@/src/Components/shared/Navbar/Navbar";
 
 const Banner = () => {
   const match = useMediaQuery("max-width:600px");
   console.log({ match });
   return (
     <div className="bg-cover banner-bg pb-16 h-full lg:h-[800px] ">
-      <Header />
+      {/* <Header /> */}
+      <Navbar/>
       <Hero />
       <Search />
 
