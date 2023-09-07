@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../../../../public/image/logo/logoOne1.png";
 import { FaBars, IconName } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   // responsive layout define --------------
@@ -20,6 +21,7 @@ const Navbar = () => {
   }, []);
   const [openMenu,setOpenMenu] = useState(false);
   const [openSignIn, setOpenSignIn] = useState(false);
+  const router = useRouter();
   return (
     <div>
       {windowWidth > 650 ? (
@@ -32,8 +34,9 @@ const Navbar = () => {
           <nav>
             <ul className="flex space-x-4 items-center">
               <li className="relative">
-                <Link href="/admin">
+           
                   <button
+                  onClick={()=>router.push("/list-property")}
                     className="text-gray-600 hover:bg-red-500 cursor-pointer bg-green-500 text-white rounded-lg px-4 py-2"
                     style={{
                       width: "140px",
@@ -49,7 +52,7 @@ const Navbar = () => {
                   >
                     List Your Property
                   </button>
-                </Link>
+            
               </li>
               <li
                 className="text-gray-600 hover:text-red-500 cursor-pointer font-inter text-xs font-bold leading-15 tracking-tighter text-white"

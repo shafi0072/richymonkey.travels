@@ -94,7 +94,7 @@ const Search = () => {
               windowWidth={windowWidth}
             />
           </div>
-          <div className="bg-white rounded-full p-6 mb-12 ">
+          <div className="bg-white rounded-full p-6 mb-4 ">
             <AddGuest
               adults={adults}
               setAdults={setAdults}
@@ -107,6 +107,7 @@ const Search = () => {
               setOpenCalender={setOpenCalender}
             />
           </div>
+          <button className="bg-red-600 w-full py-4 rounded-full text-white text-xl font-semibold">Search</button>
         </div>
       ) : (
         <div className="md:flex items-center justify-center mt-12 px-6">
