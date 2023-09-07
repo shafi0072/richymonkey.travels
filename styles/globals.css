@@ -4,16 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
 
-.banner-bg{
-  background-image: linear-gradient(rgba(17, 8, 8, 0.418),rgba(0, 0, 0, 0.493)), url(../public/image/banner/1.png);
-  
+.banner-bg {
+  background-image: linear-gradient(rgba(17, 8, 8, 0.418), rgba(0, 0, 0, 0.493)),
+    url(../public/image/banner/1.png);
+
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   background-position: center;
   height: 800px;
 }
-body{
+body {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -38,4 +39,7 @@ body{
   100% {
     transform: rotate(360deg);
   }
+}
+.yourHotelShadow {
+  box-shadow: 0px 5px 14px 0px #080f340a;
 }
