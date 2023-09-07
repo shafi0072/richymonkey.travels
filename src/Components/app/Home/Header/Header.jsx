@@ -21,12 +21,7 @@ const Header = () => {
               src={logo}
               alt="Logo"
               className=" w-48 cursor-pointer"
-              // style={{
-              //   width: "193.5483856201172px",
-              //   left: "160px",
-              //   top: "24px",
-              //   borderRadius: "0px",
-              // }}
+             
             />
           </Link>
         </div>
