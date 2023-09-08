@@ -51,6 +51,7 @@ const Search = () => {
   // console.log(state)
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
+  const [searchModal, setSearchModal] = useState(false);
 
   const formatDate = (date) => {
     const options = { weekday: 'short', month: 'short', day: 'numeric' };
@@ -68,13 +69,8 @@ const Search = () => {
 
     setOpenCalender(false);
   };
-  const handleDrawerOpen = (status) => {
-    if (status === 'open') {
-      document.getElementById('drawer').classList.add('drawerOpen');
-      document.getElementById('drawer').classList.remove('drawerClose');
-    } else {
-      document.getElementById('drawer').classList.add('drawerClose');
-    }
+  const handleDrawerOpen = () => {
+    setSearchModal(!searchModal);
   };
   return (
     <div>
@@ -84,9 +80,12 @@ const Search = () => {
             <div className='mr-2 ps-3'>
               <FaLocationDot className='text-xl' />
             </div>
-            <Mobile handleDrawerOpen={handleDrawerOpen} />
+            <Mobile
+              handleDrawerOpen={handleDrawerOpen}
+              searchModal={searchModal}
+            />
             <input
-              onClick={() => handleDrawerOpen('open')}
+              onClick={() => handleDrawerOpen()}
               type='text'
               placeholder='Where are you going'
               className='text-left font-semibold text-black placeholder-left h-6  focus:outline-none'

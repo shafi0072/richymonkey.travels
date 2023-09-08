@@ -4,7 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import SuggestedLocation from './SuggestedLocation';
 
-export default function Mobile({ handleDrawerOpen }) {
+export default function Mobile({ handleDrawerOpen, searchModal }) {
   const cityData = [
     {
       state: 'CTG',
@@ -19,7 +19,9 @@ export default function Mobile({ handleDrawerOpen }) {
     <>
       <div
         id='drawer'
-        className='md:hidden fixed w-screen drawerClose bg-white z-50'
+        className={`${
+          searchModal ? 'drawerOpen' : 'drawerClose'
+        } md:hidden fixed w-screen bg-white z-50`}
       >
         <div className='bg-[var(--orange-color)] px-10 py-5'>
           <p className='flex justify-between py-7 text-white'>
