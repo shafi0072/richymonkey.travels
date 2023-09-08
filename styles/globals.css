@@ -43,3 +43,31 @@ body {
 .yourHotelShadow {
   box-shadow: 0px 5px 14px 0px #080f340a;
 }
+:root {
+  --orange-color: #f62619;
+  --green-color: #29b547;
+}
+
+@layer components {
+  .drawerOpen {
+    transition: right 0.3s;
+    @apply h-screen top-0 right-0;
+  }
+  .drawerClose {
+    transition: right 0.3s ease;
+    @apply -right-[100vh] top-0 h-full overflow-y-auto;
+  }
+  .categoryScroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none !important;
+    @apply overflow-x-auto;
+  }
+  .categoryScrollBar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .categoryScrollBar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
